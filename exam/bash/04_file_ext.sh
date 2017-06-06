@@ -22,7 +22,7 @@ mkdir "${homedir}"
 
 while [[ $# -ge 2 ]]
 do
-    for file in $(find "${2}" -name \*.c)
+    for file in $(find "${2}" -name \*."${ext}")
     do
         if [[ -f "${file}" && -r "${file}" ]]
         then
